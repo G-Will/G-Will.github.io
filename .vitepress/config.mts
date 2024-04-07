@@ -30,6 +30,10 @@ export default defineConfig({
           { text: "Intersection Observer", link: "/intersection-observer" },
         ],
       },
+      {
+        text: "其他",
+        items: [{ text: "数字动画函数", link: "/number-animation" }],
+      },
     ],
 
     socialLinks: [
