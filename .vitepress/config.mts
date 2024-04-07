@@ -24,6 +24,12 @@ export default defineConfig({
         text: "CommonJS",
         items: [{ text: "CommonJS的本质", link: "/commonjs" }],
       },
+      {
+        text: "WebAPIs",
+        items: [
+          { text: "Intersection Observer", link: "/intersection-observer" },
+        ],
+      },
     ],
 
     socialLinks: [
