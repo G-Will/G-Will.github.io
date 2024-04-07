@@ -3,16 +3,16 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "学习笔记"
+  # text: "学习笔记 based on VitePress"
+  tagline: 学习笔记 based on VitePress
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 首页
       link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+    # - theme: alt
+    #   text: API Examples
+    #   link: /api-examples
 
 features:
   - title: Feature A

@@ -4,6 +4,7 @@
   "description": "G-Will's blog",
   "main": "index.js",
   "scripts": {
+    "start": "npm run docs:dev",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:serve": "vitepress serve docs",
