@@ -22,17 +22,24 @@ export default defineConfig({
       },
       {
         text: "CommonJS",
-        items: [{ text: "CommonJS的本质", link: "/commonjs" }],
+        items: [{ text: "CommonJS的本质", link: "fe/commonjs" }],
       },
       {
         text: "WebAPIs",
         items: [
-          { text: "Intersection Observer", link: "/intersection-observer" },
+          {
+            text: "Intersection Observer",
+            link: "fe/web-api/intersection-observer",
+          },
         ],
       },
       {
         text: "其他",
-        items: [{ text: "数字动画函数", link: "/number-animation" }],
+        items: [
+          { text: "数字动画函数", link: "fe/other/number-animation" },
+          { text: "task-pro", link: "fe/other/task-pro" },
+          { text: "用 Sass 简化媒体查询", link: "fe/scss" },
+        ],
       },
     ],
 
