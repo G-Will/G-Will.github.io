@@ -8,7 +8,7 @@ hero:
   tagline: 学习笔记 based on VitePress
   actions:
     - theme: brand
-      text: 首页
+      text: 开始
       link: /markdown-examples
     # - theme: alt
     #   text: API Examples

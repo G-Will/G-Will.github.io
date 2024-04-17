@@ -34,11 +34,26 @@ export default defineConfig({
         ],
       },
       {
+        text: "SASS",
+        items: [
+          { text: "用 Sass 简化媒体查询", link: "fe/sass/media-query" },
+          { text: "SASS 中的模块化开发", link: "fe/sass/module" },
+        ],
+      },
+      {
+        text: "webpack",
+        items: [
+          {
+            text: "webpack 中的 code spliting 是如何动态加载 chunk 的？",
+            link: "fe/webpack/code-split",
+          },
+        ],
+      },
+      {
         text: "其他",
         items: [
           { text: "数字动画函数", link: "fe/other/number-animation" },
           { text: "task-pro", link: "fe/other/task-pro" },
-          { text: "用 Sass 简化媒体查询", link: "fe/scss" },
         ],
       },
     ],
