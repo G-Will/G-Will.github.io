@@ -38,6 +38,7 @@ export default defineConfig({
         items: [
           { text: "用 Sass 简化媒体查询", link: "fe/sass/media-query" },
           { text: "SASS 中的模块化开发", link: "fe/sass/module" },
+          { text: "使用 SASS 实现主题切换", link: "fe/sass/theme" },
         ],
       },
       {
