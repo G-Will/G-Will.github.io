@@ -74,7 +74,7 @@ export default defineConfig({
             items: [
               {
                 text: "Vite 的实现原理，确实很巧妙",
-                link: "fe/vite/1/",
+                link: "fe/vite/1/index",
               },
             ],
           },
