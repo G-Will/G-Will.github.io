@@ -2,8 +2,7 @@
 
 实现数字在 duration（默认 1000 毫秒） 内从 form 到 to 的动画过度。
 
-```js{4}
-
+```js
 function animation(duration = 1000, from, to, onProgress) {
   let value = from;
   const speed = (to - from) / duration;
@@ -26,5 +25,4 @@ function animation(duration = 1000, from, to, onProgress) {
 
   _run();
 }
-
 ```

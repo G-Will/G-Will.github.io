@@ -2,7 +2,7 @@
 
 简化前：
 
-```css{4}
+```css
 .header {
   width: 100%;
 }
@@ -31,7 +31,7 @@
   }
 }
 
-@media (min-width: 1201px){
+@media (min-width: 1201px) {
   .header {
     width: 120px;
   }
@@ -40,31 +40,30 @@
 
 简化后：
 
-```scss{4}
+```scss
 // 在公共 scss 中定义好数据 （只需做一次）
 $breakpoints: (
-  'phone': (
-    320px,
-    480px,
-  ),
-  'pad': (
-    481px,
-    768px,
-  ),
-  'notebook': (
-    769px,
-    1024px,
-  ),
-  'desktop': (
-    1025px,
-    1200px,
-  ),
-  'tv': 1201px,
-)
-
-@mixin responseTo($breakname) {
+    "phone": (
+      320px,
+      480px,
+    ),
+    "pad": (
+      481px,
+      768px,
+    ),
+    "notebook": (
+      769px,
+      1024px,
+    ),
+    "desktop": (
+      1025px,
+      1200px,
+    ),
+    "tv": 1201px,
+  )
+  @mixin responseTo($breakname) {
   $bp: map-get($breakpoints, $breakname);
-  @if type-of($bp) == 'list' {
+  @if type-of($bp) == "list" {
     @media (min-width: nth($bp, 1)) and (max-width: nth($bp, 2)) {
       // @content：调用方 "{}" 中的内容
       @content;
@@ -79,21 +78,20 @@ $breakpoints: (
 // 使用
 .header {
   width: 100%;
-  @include responseTo('phone') {
+  @include responseTo("phone") {
     height: 50px;
   }
-  @include responseTo('pad') {
+  @include responseTo("pad") {
     height: 60px;
   }
-  @include responseTo('notebook') {
+  @include responseTo("notebook") {
     height: 80px;
   }
-  @include responseTo('desktop') {
+  @include responseTo("desktop") {
     height: 100px;
   }
-  @include responseTo('tv') {
+  @include responseTo("tv") {
     height: 120px;
   }
 }
-
 ```

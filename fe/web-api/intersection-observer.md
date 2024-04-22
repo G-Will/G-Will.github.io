@@ -11,7 +11,7 @@
 
 ## 图片懒加载
 
-```js{4}
+```js
 const ob = new IntersectionObserver(
   (entries) => {
     for (const entry of entries) {
@@ -33,14 +33,13 @@ const ob = new IntersectionObserver(
 
 const imgs = document.querySelectorAll("img[data-src]");
 imgs.forEach((img) => ob.observe(img));
-
 ```
 
 ## 无限滚动
 
 思路：只要下方 loading 图进入视口（或者离视口有一定具体，即：提前加载），就加载指定数量的图片。
 
-```js{4}
+```js
 async function loadMoreImages(num = 10) {
   // 加载逻辑...
 }
@@ -59,12 +58,11 @@ const ob = new IntersectionObserver(
 );
 
 ob.observe(document.querySelector(".spin"));
-
 ```
 
 ## 视频进入视口播放，离开后暂停
 
-```js{4}
+```js
 const vdo = document.querySelector("video");
 
 const ob = new IntersectionObserver(

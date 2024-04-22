@@ -2,8 +2,7 @@
 
 模拟任务执行的洋葱模型，实现 TaskPro，满足如下调用和输入：
 
-```js{4}
-
+```js
 /**
  * 任务执行的洋葱模型：实现 TaskPro，满足如下调用和输入
  */
@@ -24,8 +23,7 @@ t.run(); // 输入 1 start, 2, 3, 1 end
 
 ## 实现
 
-```js{4}
-
+```js
 class TaskPro {
   _taskList = [];
   _isRunning = false;
@@ -66,5 +64,4 @@ class TaskPro {
     await this._runTask();
   };
 }
-
 ```

@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "学习笔记"
   # text: "学习笔记 based on VitePress"
-  tagline: 学习笔记 based on VitePress
+  tagline: based on VitePress
   actions:
     - theme: brand
       text: 开始

@@ -8,7 +8,7 @@ require 是 node 在本地实现的，以下用一个伪代码说明 require 的
 
 在模块中，`this`、`exports`、`module.exports` 是恒等的
 
-```js{4}
+```js
 function require(modulePath) {
   // 1. 根据传入的模块路径，得到模块完整的绝对路径
   var moduleId = getModuleId(modulePath);
@@ -35,14 +35,13 @@ function require(modulePath) {
   // 6. 返回 module.exports
   return module.exports;
 }
-
 ```
 
 ## 一个问题
 
 下边的模块，导出的是什么？
 
-```js{4}
+```js
 this.a = 1;
 exports.b = 2;
 exports = { c: 3 };
