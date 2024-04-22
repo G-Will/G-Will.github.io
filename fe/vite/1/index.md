@@ -83,7 +83,7 @@ npx http-server
 
 ![alt text](imgs/image-6.png)
 
-浏览器访问下 http://localhost:8080/index2.html
+浏览器访问下 `http://localhost:8080/index2.html`
 
 ![alt text](imgs/image-7.png)
 ![alt text](imgs/image-8.png)
