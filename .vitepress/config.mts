@@ -37,6 +37,10 @@ export default defineConfig({
         items: [{ text: "CommonJS的本质", link: "fe/commonjs" }],
       },
       {
+        text: "TypeScript",
+        items: [{ text: "看过最简洁的 TSConfig 介绍", link: "fe/ts/1" }],
+      },
+      {
         text: "WebAPIs",
         items: [
           {
@@ -61,7 +65,7 @@ export default defineConfig({
         text: "构建工具",
         items: [
           {
-            text: "webpack",
+            text: "Webpack",
             items: [
               {
                 text: "webpack 中的 code spliting 是如何动态加载 chunk 的？",
@@ -70,7 +74,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "vite",
+            text: "Vite",
             items: [
               {
                 text: "Vite 的实现原理，确实很巧妙",
@@ -85,6 +89,10 @@ export default defineConfig({
         items: [
           { text: "数字动画函数", link: "fe/other/number-animation" },
           { text: "task-pro", link: "fe/other/task-pro" },
+          {
+            text: "跨标签页的数据通信",
+            link: "fe/other/cross-tab-data-sharing",
+          },
         ],
       },
     ],
