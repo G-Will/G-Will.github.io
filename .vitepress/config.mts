@@ -85,6 +85,15 @@ export default defineConfig({
         ],
       },
       {
+        text: "正则表达式           ",
+        items: [
+          {
+            text: "一些案例",
+            link: "fe/regex/index",
+          },
+        ],
+      },
+      {
         text: "其他",
         items: [
           { text: "数字动画函数", link: "fe/other/number-animation" },
