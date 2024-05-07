@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /markdown-examples
+      link: /fe/commonjs
     # - theme: alt
     #   text: API Examples
     #   link: /api-examples

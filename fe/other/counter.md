@@ -1,8 +1,9 @@
-# React计数器
+# React 计数器
 
 ## setTimeout
+
 ```ts
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function CounterWithTimeout() {
   const [count, setCount] = useState(0);
@@ -11,18 +12,20 @@ function CounterWithTimeout() {
     setTimeout(() => {
       setCount(count + 1);
     }, 1000);
-  }, [count]);
+  }, [count]); // 添加 count 依赖
 
   return <div>Count: {count}</div>;
 }
 
 export default CounterWithTimeout;
 ```
+
 一旦定时器的回调函数被执行，定时器就自动结束了，因此这里不需要显式地调用 clearTimeout 来清除定时器。
 
 ## setInterval
+
 ```ts
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function CounterWithInterval() {
   const [count, setCount] = useState(0);
@@ -33,9 +36,9 @@ function CounterWithInterval() {
     }, 1000);
 
     return () => {
-      clearInterval(timer)
-    }
-  }, []);
+      clearInterval(timer);
+    };
+  }, []); // 空依赖。添加 count 依赖后，结果虽然是对的，但是每次 count 都会重新启动一个 setInterval，显得很冗余。
 
   return <div>Count: {count}</div>;
 }
@@ -44,10 +47,12 @@ export default CounterWithTimeout;
 ```
 
 ## 易错点
+
 1. 使用 setInterval，useEffect 是空依赖，并且使用 `setCount(count + 1)`。
-  useEffect 添加了 count 依赖后，结果虽然是对的，但是每次 count 都会重新启动一个 setInterval，显得很冗余。
+   useEffect 添加了 count 依赖后，结果虽然是对的，但是每次 count 都会重新启动一个 setInterval，显得很冗余。
+
 ```ts
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function CounterWithInterval() {
   const [count, setCount] = useState(0);
@@ -58,8 +63,8 @@ function CounterWithInterval() {
     }, 1000);
 
     return () => {
-      clearInterval(timer)
-    }
+      clearInterval(timer);
+    };
   }, []);
 
   return <div>Count: {count}</div>;

@@ -85,7 +85,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "正则表达式           ",
+        text: "正则表达式",
         items: [
           {
             text: "一些案例",
@@ -101,6 +101,18 @@ export default defineConfig({
           {
             text: "跨标签页的数据通信",
             link: "fe/other/cross-tab-data-sharing",
+          },
+          {
+            text: "React 计数器",
+            link: "fe/other/counter",
+          },
+          {
+            text: "JS Label 语法",
+            link: "fe/other/js-label",
+          },
+          {
+            text: "手写设计模式",
+            link: "fe/other/design-patterns",
           },
         ],
       },
