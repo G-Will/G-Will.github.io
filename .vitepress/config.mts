@@ -38,7 +38,11 @@ export default defineConfig({
       },
       {
         text: "TypeScript",
-        items: [{ text: "看过最简洁的 TSConfig 介绍", link: "fe/ts/1" }],
+        items: [
+          { text: "看过最简洁的 TSConfig 介绍", link: "fe/ts/1" },
+          { text: "TS 中的函数重载", link: "fe/ts/override" },
+          { text: "GetOptionals", link: "fe/ts/get-optionals" },
+        ],
       },
       {
         text: "WebAPIs",
@@ -94,6 +98,15 @@ export default defineConfig({
         ],
       },
       {
+        text: "性能优化",
+        items: [
+          {
+            text: "JS 分片任务的高阶函数封装",
+            link: "fe/optimization/1",
+          },
+        ],
+      },
+      {
         text: "其他",
         items: [
           { text: "数字动画函数", link: "fe/other/number-animation" },
@@ -113,6 +126,14 @@ export default defineConfig({
           {
             text: "手写设计模式",
             link: "fe/other/design-patterns",
+          },
+          {
+            text: "模拟 call 的实现",
+            link: "fe/other/call",
+          },
+          {
+            text: "极简精妙的 JS 代码片段",
+            link: "fe/other/js-utils",
           },
         ],
       },
