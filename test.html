@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLIP 动画方案</title>
+
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn {
+      background: rgb(26, 126, 26);
+      width: 200px;
+      height: 30px;
+      border-radius: 10px;
+      border: none;
+      margin-block-end: 10px;
+      cursor: pointer;
+    }
+
+    .container .item {
+      width: 200px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .container .item.first {
+      background: #f40;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item first">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+  <button class="btn">改变第一个元素的位置</button>
+
+  <script>
+    const btn = document.querySelector('.btn');
+
+    const list = document.querySelector('.container');
+    const firstItem = document.querySelector('.first');
+
+    function getLocation() {
+      const rect = firstItem.getBoundingClientRect();
+      return rect.top;
+    }
+
+    const start = getLocation();
+    console.log('First:', start)
+
+    btn.onclick = () => {
+      list.insertBefore(firstItem, null); // 这一行代码结束后，firstItem 的位置并没有变化，因为页面还没有渲染。可以通过添加 delay 阻止主线程查看
+      // delay();
+      const end = getLocation();
+      console.log('Last:', end);
+      const dis = start - end;
+      firstItem.style.transform = `translateY(${dis}px)`;
+      // delay();
+      console.log('Invert:', dis);
+      requestAnimationFrame(() => {
+        console.log('Play');
+        firstItem.style.transition = `transform 1s`;
+        firstItem.style.removeProperty('transform');
+      })
+    }
+
+    function delay(duration = 1000) {
+      const now = Date.now();
+      while (Date.now() - now < duration) {
+      }
+      // console.log('==delay end==');
+    }
+
+  </script>
+</body>
+
+</html>

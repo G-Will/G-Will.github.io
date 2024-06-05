@@ -89,20 +89,20 @@ export default defineConfig({
         ],
       },
       {
-        text: "正则表达式",
-        items: [
-          {
-            text: "一些案例",
-            link: "fe/regex/index",
-          },
-        ],
-      },
-      {
         text: "性能优化",
         items: [
           {
             text: "JS 分片任务的高阶函数封装",
             link: "fe/optimization/1",
+          },
+        ],
+      },
+      {
+        text: "正则表达式",
+        items: [
+          {
+            text: "一些案例",
+            link: "fe/regex/index",
           },
         ],
       },
@@ -134,6 +134,10 @@ export default defineConfig({
           {
             text: "极简精妙的 JS 代码片段",
             link: "fe/other/js-utils",
+          },
+          {
+            text: "FLIP 动画方案",
+            link: "fe/other/flip",
           },
         ],
       },
