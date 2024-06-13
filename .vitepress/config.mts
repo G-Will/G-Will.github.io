@@ -107,6 +107,19 @@ export default defineConfig({
         ],
       },
       {
+        text: "网络",
+        items: [
+          {
+            text: "三张图让你了解 async 和 defer 的区别",
+            link: "fe/network/async-defer/index",
+          },
+          {
+            text: "跨域方案的抉择",
+            link: "fe/network/cross-origin/index",
+          },
+        ],
+      },
+      {
         text: "其他",
         items: [
           { text: "数字动画函数", link: "fe/other/number-animation" },
@@ -130,6 +143,10 @@ export default defineConfig({
           {
             text: "模拟 call 的实现",
             link: "fe/other/call",
+          },
+          {
+            text: "模拟 bind 的实现",
+            link: "fe/other/bind/index",
           },
           {
             text: "极简精妙的 JS 代码片段",
