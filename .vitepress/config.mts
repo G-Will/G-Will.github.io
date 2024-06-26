@@ -156,6 +156,10 @@ export default defineConfig({
             text: "FLIP 动画方案",
             link: "fe/other/flip",
           },
+          {
+            text: "消除异步的传染性",
+            link: "fe/other/solve-async-infection/index",
+          },
         ],
       },
     ],
