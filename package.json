@@ -1,11 +1,10 @@
 {
   "name": "g-will.github.io",
   "version": "0.0.1",
+  "type": "module",
   "description": "G-Will's blog",
-  "main": "index.js",
   "scripts": {
-    "start": "npm run docs:dev",
-    "docs:dev": "vitepress dev",
+    "start": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:serve": "vitepress serve docs",
     "docs:preview": "vitepress preview",
@@ -13,7 +12,18 @@
   },
   "author": "G-Will",
   "license": "ISC",
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vueuse/core": "^10.11.0",
+    "element-plus": "^2.7.6",
+    "vue": "^3.4.30"
+  },
   "devDependencies": {
-    "vitepress": "^1.0.1"
+    "@types/node": "^20.14.9",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "sass": "^1.77.6",
+    "vite": "^5.3.1",
+    "vite-plugin-inspect": "^0.8.4",
+    "vitepress": "^1.2.3"
   }
 }
