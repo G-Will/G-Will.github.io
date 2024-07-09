@@ -186,6 +186,11 @@ export const sidebar: DefaultTheme.Sidebar = {
           base: "/fe/modularization/",
           items: [{ text: "CommonJS的本质", link: "commonjs/" }],
         },
+        {
+          text: "ESModule",
+          base: "/fe/modularization/es-module/",
+          items: [{ text: "ESModule的工作原理", link: "work-principle/" }],
+        },
       ],
     },
     {
@@ -337,6 +342,7 @@ export const sidebar: DefaultTheme.Sidebar = {
           text: "闪光边框",
           link: "border-light/",
         },
+        { text: "字符串比较", link: "string-compare/" },
       ],
     },
   ],

@@ -15,6 +15,13 @@ export default defineConfig({
       // 默认禁用图片懒加载
       lazyLoading: true,
     },
+    container: {
+      tipLabel: "提示",
+      warningLabel: "警告",
+      dangerLabel: "危险",
+      infoLabel: "信息",
+      detailsLabel: "点击展开",
+    },
   },
   // lastUpdated: true,
   themeConfig: {
