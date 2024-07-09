@@ -19,6 +19,7 @@ export default defineConfig({
   // lastUpdated: true,
   themeConfig: {
     logo: "/favicon.ico",
+    // 将显示从 `<h2>` 到 `<h4>` 的所有标题
     outline: [2, 4],
     // https://vitepress.dev/reference/default-theme-config
     nav,

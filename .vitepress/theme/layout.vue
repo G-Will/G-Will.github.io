@@ -1,3 +1,8 @@
+<!--
+  扩展默认主题以在切换颜色模式时提供自定义过渡动画
+  ref: https://vitepress.dev/zh/guide/extending-default-theme#%E4%BD%BF%E7%94%A8%E8%A7%86%E5%9B%BE%E8%BF%87%E6%B8%A1-api
+-->
+
 <script setup lang="ts">
 import { useData } from "vitepress";
 import DefaultTheme from "vitepress/theme";

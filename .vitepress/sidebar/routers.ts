@@ -183,8 +183,8 @@ export const sidebar: DefaultTheme.Sidebar = {
       items: [
         {
           text: "CommonJS",
-          base: "/fe/modularization/commonjs/",
-          items: [{ text: "CommonJS的本质", link: "/" }],
+          base: "/fe/modularization/",
+          items: [{ text: "CommonJS的本质", link: "commonjs/" }],
         },
       ],
     },
