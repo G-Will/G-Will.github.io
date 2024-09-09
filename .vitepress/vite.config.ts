@@ -3,9 +3,9 @@ import { resolve } from "path";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 // import Icons from "unplugin-icons/vite";
 // import IconsResolver from "unplugin-icons/resolver";
-// import AutoImport from "unplugin-auto-import/vite";
-// import Components from "unplugin-vue-components/vite";
-// import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
+import AutoImport from "unplugin-auto-import/vite";
+import Components from "unplugin-vue-components/vite";
+import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 import Inspect from "vite-plugin-inspect";
 
 const viteConfig: UserConfig = {
@@ -42,24 +42,24 @@ const viteConfig: UserConfig = {
     // jsx
     vueJsx(),
     // 自动引入
-    // AutoImport({
-    //   resolvers: [
-    //     ElementPlusResolver(),
-    //     IconsResolver({
-    //       prefix: "Icon",
-    //     }),
-    //   ],
-    // }),
-    // // 自动注册
-    // Components({
-    //   dts: true,
-    //   resolvers: [
-    //     IconsResolver({
-    //       enabledCollections: ["ep"],
-    //     }),
-    //     ElementPlusResolver(),
-    //   ],
-    // }),
+    AutoImport({
+      resolvers: [
+        ElementPlusResolver(),
+        // IconsResolver({
+        //   prefix: "Icon",
+        // }),
+      ],
+    }),
+    // 自动注册
+    Components({
+      dts: true,
+      resolvers: [
+        // IconsResolver({
+        //   enabledCollections: ["ep"],
+        // }),
+        ElementPlusResolver(),
+      ],
+    }),
     // // 自动注册
     // Icons({
     //   autoInstall: true,

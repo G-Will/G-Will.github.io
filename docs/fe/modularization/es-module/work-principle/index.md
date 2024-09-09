@@ -7,30 +7,11 @@
 
 ::: code-group
 
-```js [main.js]
-import foo from "./foo.js";
-import bar from "./bar.js";
+<<< @/fe/modularization/es-module/work-principle/main.js
 
-import("./dynamic.js").then((m) => {
-  console.log("main", m.default);
-});
+<<< @/fe/modularization/es-module/work-principle/foo.js
 
-console.log("main", foo, bar);
-```
-
-```js [foo.js]
-import bar from "./bar.js";
-
-console.log("foo", bar);
-
-export default "foo";
-```
-
-```js [bar.js]
-console.log("bar");
-
-export default "bar";
-```
+<<< @/fe/modularization/es-module/work-principle/bar.js
 
 ## 模块解析
 

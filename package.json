@@ -16,12 +16,16 @@
     "@element-plus/icons-vue": "^2.3.1",
     "@vueuse/core": "^10.11.0",
     "element-plus": "^2.7.6",
+    "spark-md5": "^3.0.2",
     "vue": "^3.4.30"
   },
   "devDependencies": {
     "@types/node": "^20.14.9",
+    "@types/spark-md5": "^3.0.4",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
     "sass": "^1.77.6",
+    "unplugin-auto-import": "^0.18.0",
+    "unplugin-vue-components": "^0.27.2",
     "vite": "^5.3.1",
     "vite-plugin-inspect": "^0.8.4",
     "vitepress": "^1.2.3"

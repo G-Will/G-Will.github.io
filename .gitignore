@@ -1,3 +1,6 @@
 node_modules
 .history
 dist
+.vitepress/cache
+.vitepress/cache/deps/element-plus.js.map
+.vitepress/cache/deps/element-plus.js

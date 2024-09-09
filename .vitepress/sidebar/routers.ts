@@ -219,13 +219,23 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
     {
-      text: "SASS",
-      base: "/fe/sass/",
+      text: "CSS",
+      base: "/fe/css/",
       collapsed: true,
       items: [
-        { text: "用 Sass 简化媒体查询", link: "media-query" },
-        { text: "SASS 中的模块化开发", link: "module" },
-        { text: "使用 SASS 实现主题切换", link: "theme" },
+        {
+          text: "如何实现高度自动的过度",
+          link: "height-transition",
+        },
+        {
+          text: "SASS",
+          base: "/fe/css/sass/",
+          items: [
+            { text: "用 Sass 简化媒体查询", link: "media-query" },
+            { text: "SASS 中的模块化开发", link: "module" },
+            { text: "使用 SASS 实现主题切换", link: "theme" },
+          ],
+        },
       ],
     },
     {
@@ -343,6 +353,7 @@ export const sidebar: DefaultTheme.Sidebar = {
           link: "border-light/",
         },
         { text: "字符串比较", link: "string-compare/" },
+        { text: "大文件分片", link: "big-file-chunk-split/" },
       ],
     },
   ],

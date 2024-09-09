@@ -11,9 +11,7 @@ import demo from "./index.vue"
 ## 代码实现
 
 ::: details 点击展开
-
 <<< @/fe/other/border-light/index.vue
-
 :::
 
 [视频讲解](https://www.douyin.com/search/渡一前端必修课_鼠标移动的高亮边框效果)
