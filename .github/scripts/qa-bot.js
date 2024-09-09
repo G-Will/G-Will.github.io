@@ -1,6 +1,6 @@
-const { Octokit } = require("@octokit/rest");
-const axios = require("axios");
-const { handleStream } = require("./handle-stream");
+import { Octokit } from "@octokit/rest";
+import axios from "axios";
+import { handleStream } from "./handle-stream";
 
 // 从环境变量中获取GitHub Token和Bot API Key
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
