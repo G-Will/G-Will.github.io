@@ -1,85 +1,55 @@
 {
-  "hash": "e168b358",
+  "hash": "90b941ce",
   "configHash": "0dd4580c",
-  "lockfileHash": "3de0b008",
-  "browserHash": "6f641896",
+  "lockfileHash": "4ad578c4",
+  "browserHash": "c988c7c2",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "38f24fec",
+      "fileHash": "702e1f4c",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "b71a2f47",
+      "fileHash": "000d0d35",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "0494d327",
+      "fileHash": "d2cf5258",
       "needsInterop": false
     },
     "element-plus": {
       "src": "../../../node_modules/element-plus/es/index.mjs",
       "file": "element-plus.js",
-      "fileHash": "9a2084fe",
+      "fileHash": "bca53acf",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "41d54ff7",
+      "fileHash": "827df4b0",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "8a5e38a1",
+      "fileHash": "00a5ac83",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "7b05bf08",
+      "fileHash": "8742f3d0",
       "needsInterop": false
-    },
-    "element-plus/es": {
-      "src": "../../../node_modules/element-plus/es/index.mjs",
-      "file": "element-plus_es.js",
-      "fileHash": "3d158ec6",
-      "needsInterop": false
-    },
-    "element-plus/es/components/base/style/css": {
-      "src": "../../../node_modules/element-plus/es/components/base/style/css.mjs",
-      "file": "element-plus_es_components_base_style_css.js",
-      "fileHash": "b2059b4c",
-      "needsInterop": false
-    },
-    "element-plus/es/components/button/style/css": {
-      "src": "../../../node_modules/element-plus/es/components/button/style/css.mjs",
-      "file": "element-plus_es_components_button_style_css.js",
-      "fileHash": "286619bc",
-      "needsInterop": false
-    },
-    "spark-md5": {
-      "src": "../../../node_modules/spark-md5/spark-md5.js",
-      "file": "spark-md5.js",
-      "fileHash": "23b33d65",
-      "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-6EAHWSE3": {
-      "file": "chunk-6EAHWSE3.js"
-    },
     "chunk-GBKLWPDK": {
       "file": "chunk-GBKLWPDK.js"
-    },
-    "chunk-KK6IPJAQ": {
-      "file": "chunk-KK6IPJAQ.js"
     },
     "chunk-Z5MM7V3J": {
       "file": "chunk-Z5MM7V3J.js"
