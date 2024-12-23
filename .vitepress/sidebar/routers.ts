@@ -355,8 +355,13 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: "字符串比较", link: "string-compare/" },
         { text: "大文件分片", link: "big-file-chunk-split/" },
         {
-          text: "legacy-peer-deps", link: "dependencies/legacy-peer-deps/"
-        }
+          text: "legacy-peer-deps",
+          link: "dependencies/legacy-peer-deps/",
+        },
+        {
+          text: "canvas-lottery",
+          link: "canvas-lottery/",
+        },
       ],
     },
   ],
